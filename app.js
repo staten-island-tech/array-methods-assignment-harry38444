@@ -1,50 +1,39 @@
-const date = new Date();
-let year = date.getFullYear();
-const Harry = {
+const students = [{
     firstName: "Harry",
     lastName:"Li",
-    grauated: false,
+    graduating: true,
     intelligent: true,
     smelly: false,
     DOB: 2007,
     spouse: null,
     siblings: ["JJ", "JH"],
-    age: function(){
- return year - this.DOB;
-    },
-
-}
-
-const rick = {
-    firstName: "rick",
+    },{
+firstName: "rick",
     lastName:"Li",
-    grauated: false,
+    graduating: false,
     intelligent: false,
     smelly: true,
     DOB: 2008,
     spouse: null,
-    siblings: ["b", "ba"],
-    age: function(){
- return year - this.DOB;
-    },
+    siblings: ["I", "ba"],
 
-}
-
-const ty = {
-    firstName: "b",
+    },{
+    
+    firstName: "ty",
     lastName:"yap",
-    grauated: false,
+    graduating: false,
     intelligent: false,
     smelly: true,
-    DOB: 2007,
+    DOB: 2008,
     spouse: null,
-    siblings: ["ha", "h"],
-    age: function(){
- return year - this.DOB;
-    },
-
+    siblings: ["t", "tt"],
+    },{
 }
+]
+
+    
+
 
 students.forEach((student)=> console.log(student.firstName));
-const current = students.filter((student)=> student.graduated === false);
-console.log(graduates);
+const current = students.filter((student)=> student.graduating === true)
+console.log(graduating)
