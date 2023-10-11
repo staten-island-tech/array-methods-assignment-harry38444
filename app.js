@@ -11,7 +11,7 @@ firstName: "rick",
     graduating: false,
     intelligent: false,
     DOB: 2008,
-    siblings: ["I", "ba"],
+    siblings: ["rat", "ratty"],
 
     },{
     
@@ -25,7 +25,6 @@ firstName: "rick",
 }
 ]
 
-    
 
 students.forEach((student)=> console.log(student.siblings))
 students.forEach((student)=> console.log(student.firstName))
