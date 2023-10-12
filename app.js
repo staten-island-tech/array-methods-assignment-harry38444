@@ -26,9 +26,9 @@ firstName: "rick",
 ]
 
 
-students.forEach((student)=> console.log(student.siblings))
+const siblings = students.forEach((student)=> student.siblings.forEach((siblings) =>console.log(siblings)));
 students.forEach((student)=> console.log(student.firstName))
 const graduating = students.filter((student)=> student.graduating === true)
 console.log(graduating)
-const siblings = students.filter((student)=> student.graduating !== false)
-console.log(graduating)
+const Has_siblings = students.filter((student)=> student.intelligent !== false)
+console.log(Has_siblings)
