@@ -23,8 +23,13 @@ firstName: "rick",
 }
 ]
 const graduating = students.filter((student)=> student.graduating === true)
-console.log(graduating)
+console.log("students graduating")
+graduating.forEach((student)=> console.log(student.firstName))
+
 const has_siblings = students.filter((student)=> student.siblings !== false)
-console.log(has_siblings)
+console.log("students that have siblings")
+has_siblings.forEach((student)=> console.log(student.firstName))
+
+console.log("the siblings")
 const siblings = students.forEach((student)=> student.siblings.forEach((siblings) =>console.log(siblings)))
 students.forEach((student)=> console.log(student.firstName))
